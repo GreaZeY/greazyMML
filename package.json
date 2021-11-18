@@ -5,8 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node CM-Backend/server.js",
-    "dev": "nodemon CM-Backend/server.js",
-    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false && npm install --prefix capital-movie && npm run build --prefix capital-movie"
+    "dev": "nodemon CM-Backend/server.js"
   },
   "author": "GreaZeY",
   "license": "ISC",
