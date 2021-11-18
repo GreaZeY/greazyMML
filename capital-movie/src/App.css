@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1vmax;
+
+}
+body{
+  background: #10141b;
+  overflow-x: hidden;
+}
+
+::-moz-selection {
+  background:rgba(5, 255, 234, 0.281);
+}
+
+::selection {
+  background:rgba(5, 255, 234, 0.356);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 6px;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent; 
+  border-radius: 50vmax;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(315deg,  rgb(0, 255, 191) 0%, rgb(0, 255, 191) 100%); 
+  border-radius: 50vmax;
+}
+
+::placeholder { 
+  color: rgb(0, 255, 191);
+  opacity: 1; 
+}
+
+:-ms-input-placeholder { 
+  color: rgb(0, 255, 191);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-text-fill-color: white;
+    transition: background-color 5000s ease-in-out 0s;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+/* loading backdrop  */
+
+.LoadingBackdrop{
+  display: flex;
+  position: fixed;
+  background: rgba(82, 82, 82, 0.404);
+  top: 0;
+  left: 0;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
