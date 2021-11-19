@@ -16,13 +16,14 @@ const MovieSearch = ({ match }) => {
   const { loading, error, movies, totalPages } = useSelector(
     (state) => state.movies
   );
+  const { isAuthenticated } = useSelector((state) => state.user);
   useEffect(() => {
     if (error) {
       alert.error(error);
       dispatch(clearErrors());
     }
     dispatch(getMovies(pageNumber, "search", match.params.query));
-  }, [dispatch, error, alert, pageNumber, match.params.query]);
+  }, [dispatch, error, alert, pageNumber, match.params.query,isAuthenticated]);
 
   useEffect(() => {
     setNextPage((prevNextPage) => {
@@ -33,7 +34,7 @@ const MovieSearch = ({ match }) => {
   useEffect(() => {
     setNextPage([]);
     setPageNumber(1);
-  }, [match.params.query]);
+  }, [match.params.query,isAuthenticated]);
 
   if (pageNumber <= totalPages) {
     window.onscroll = function () {

@@ -1,19 +1,11 @@
-import React, { Fragment, useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import React, { Fragment} from "react";
+import { useSelector} from "react-redux";
 import  MovieCard from '../Home/MovieCard'
-import { getFavList } from "../../actions/movieAction";
 import MetaData from "../layout/MetaData";  
 const Favorites = () => {
 
-    const { user,  isAuthenticated } = useSelector((state) => state.user);
-    const {favList,loading} = useSelector(state => state.UserFavList)
-    const dispatch = useDispatch();
 
-    useEffect(()=>{
-        if(isAuthenticated===true){
-          dispatch(getFavList(user._id))
-        }
-      },[user,isAuthenticated,dispatch])
+    const {favList,loading} = useSelector(state => state.UserFavList)
 
     return (
         <Fragment>

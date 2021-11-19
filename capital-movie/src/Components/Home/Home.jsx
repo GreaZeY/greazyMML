@@ -5,7 +5,6 @@ import {getMovies, clearErrors} from "../../actions/movieAction";
 import {useSelector,useDispatch} from "react-redux";
 import MovieCard from './MovieCard.jsx'
 import {useAlert} from "react-alert"
-import { useLocation} from 'react-router-dom'; 
 import './Home.css'
 import MetaData from "../layout/MetaData"; 
 
@@ -15,22 +14,19 @@ const Home = ({match}) => {
     const dispatch = useDispatch();
     const [nextPage, setNextPage] = useState([]);
     const [pageNumber, setPageNumber] = useState(1);
-    const location = useLocation();
 
-    useEffect(() => {
-      setNextPage([])
-        setPageNumber(1)
-    }, [location]);
+
 
     const { loading, error, movies,totalPages} =
       useSelector((state) => state.movies);
+      const { isAuthenticated } = useSelector((state) => state.user);
     useEffect(() => {
       if (error) {
         alert.error(error);
         dispatch(clearErrors());
       }
       dispatch(getMovies(pageNumber,'discover'));
-    }, [dispatch, error, alert,pageNumber,match.params.query,location]);
+    }, [dispatch, error, alert,pageNumber,match.params.query,isAuthenticated]);
   
     useEffect(() => {
         setNextPage((prevNextPage) => {
@@ -53,7 +49,7 @@ const Home = ({match}) => {
     useEffect(() => {
       setNextPage([])
       setPageNumber(1)
-  }, [match.params.query]);
+  }, [match.params.query,isAuthenticated]);
   
 
  

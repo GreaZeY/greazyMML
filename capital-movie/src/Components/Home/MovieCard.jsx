@@ -41,11 +41,7 @@ const MovieCard = ({ movie,favtab }) => {
     setMessage("Removed from favorites");
   };
 
-  useEffect(() => {
-    if (isAuthenticated === true) {
-      dispatch(getFavList(user._id));
-    }
-  }, [user, isAuthenticated, dispatch]);
+
 
   useEffect(()=>{
     if(message){

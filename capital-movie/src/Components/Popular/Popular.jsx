@@ -17,13 +17,14 @@ const Home = ({match,history}) => {
 
     const { loading, error, movies,totalPages} =
       useSelector((state) => state.movies);
+      const { isAuthenticated } = useSelector((state) => state.user);
     useEffect(() => {
       if (error) {
         alert.error(error);
         dispatch(clearErrors());
       }
       dispatch(getMovies(pageNumber,'popular'));
-    }, [dispatch, error, alert,pageNumber,match.params.query]);
+    }, [dispatch, error, alert,pageNumber,match.params.query,isAuthenticated]);
   
     useEffect(() => {
         setNextPage((prevNextPage) => {
@@ -46,7 +47,7 @@ const Home = ({match,history}) => {
     useEffect(() => {
       setNextPage([])
       setPageNumber(1)
-  }, [match.params.query,history]);
+  }, [match.params.query,history,isAuthenticated]);
   
 
 
