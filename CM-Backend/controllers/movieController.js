@@ -88,7 +88,10 @@ exports.addToFavorites = catchAsyncErros(async (req,res,next)=>{
              })
             await UserFavList.save()
     }
-        res.status(200).json({success:true})
+    res.status(200).json({
+        success:true,
+        UserFavList
+    })
     })
     .catch(error => {
         return next(new ErrorHandler(error.message,400))
@@ -107,7 +110,10 @@ exports.removeFromFavorites = catchAsyncErros(async (req,res,next)=>{
         UserFavList.favList = UserFavList.favList.filter((item) => item.id !== response.data.id )
             await UserFavList.save()
     }
-        res.status(200).json({success:true})
+        res.status(200).json({
+            success:true,
+            UserFavList
+        })
     })
     .catch(error => {
         return next(new ErrorHandler(error.message,400))
