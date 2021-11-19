@@ -1,0 +1,80 @@
+.detailsContainer{
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin: 4vmax 15vmax;
+}
+.left>img{
+    width: 28vmax;
+}
+.right{
+    width: 35vw;
+    margin-left: 3vmax;
+}
+.vote, .rating{
+   margin: .5vmax 0;
+}
+.right>h1{
+    font-size: 2vmax;
+}
+.genres{
+    display: flex;
+    margin:1vmax 0;
+}
+.genres>p{
+    margin:0vmax 1vmax;
+}
+.tagline{
+    margin: 1.5vmax 0;
+    color: gray;
+    font-style: italic;
+}
+.right>h2{
+    margin-bottom: 1vmax;
+    font-size: 1.5vmax;
+}
+
+.right>button{
+    height: 2.5vmax;
+    background-color: rgb(0, 255, 191);
+    border: none;
+    cursor: pointer;
+    padding: .5vmax;
+    font-weight: 900;
+    transition: .5s;
+    border-radius: 5px;
+}
+.right>button:hover{
+    background: rgb(135, 255, 225);
+}
+.Sinfo{
+    display: flex;
+    margin-top: 2vmax;
+    justify-content: space-between;
+}
+.homepage{
+    margin-top:2vmax;
+}
+.homepage>a:hover{
+   text-decoration: underline;
+}
+@media screen and (max-width:640px) {
+    .detailsContainer{
+        margin: 4vmax ;
+        flex-direction: column;
+    }
+    .right{
+        margin-left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .Sinfo{
+    
+    width: 70%;
+       
+    }
+}

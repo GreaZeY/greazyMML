@@ -1,0 +1,57 @@
+.banner{
+    height: 75vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    object-fit: cover;
+}
+.imageSpace{
+    height: 65vh;
+}
+.imgbackdrop{
+    background: linear-gradient(rgba(0, 0, 0, 0.822),rgba(0, 0, 0, 0.397));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vmax;
+    color :white;
+    flex-direction: column;
+    text-align: center;
+    height: 75vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-bottom: 8px solid rgb(34, 34, 34);
+}
+.imgbackdrop>h1{
+    font-size: 3vmax;
+    color: rgb(255, 136, 0);
+}
+.movieContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.discover{
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.discover>h1{
+    text-align: center;
+    color:  rgb(0, 255, 191);
+    font-size: 2.5vmax;
+    width: 15vmax;
+    margin: 5vmax ;
+    border-bottom: 1px solid rgb(0, 255, 191);
+}
+.loader{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom:3vmax ;
+}
