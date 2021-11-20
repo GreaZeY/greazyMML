@@ -17,15 +17,15 @@ const FavoriteSchema = new mongoose.Schema({
         },
         poster_path: {
             type: String,
-            required: true
+            default:''
         },
         vote_average: {
             type: Number,
-            required: true
+            default:0
         },
         release_date: {
             type: String,
-            required: true
+            default:'--/--/--'
         },
         date_added:{
             type:Date,
