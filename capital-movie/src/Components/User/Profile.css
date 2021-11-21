@@ -91,7 +91,7 @@
   
   .profileContainer > div:last-child > div > p {
     color: rgb(0, 255, 191);
-    font: 400 1.2vmax cursive;
+    font: 400 1.2vmax 'Nunito';
     margin: 0.2vmax;
   }
   
@@ -132,7 +132,7 @@
     color: black;
   }
   .updateInfo{
-    font: 400 1vmax cursive;
+    font: 400 1vmax 'Nunito';
     margin: .5vmax auto;
     border: none;
     border-bottom: 1px solid rgb(0, 255, 191);
@@ -162,7 +162,7 @@
     color: white;
     border-bottom: 1px solid rgb(0, 255, 191);
     margin: .3vmax;
-    font: 300 1.5vmax cursive;
+    font: 300 1.5vmax 'Nunito';
     outline: none;
     
   }
@@ -200,7 +200,7 @@
     }
   
     .profileContainer > div:last-child > div > p {
-      font: 400 2vmax cursive;
+      font: 400 2vmax 'Nunito';
       margin: 0.5vmax 0;
     }
   

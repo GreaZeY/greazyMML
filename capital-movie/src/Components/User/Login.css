@@ -74,7 +74,7 @@
   width: 100%;
   box-sizing: border-box;
   border: none ;
-  font: 300 1.2vmax cursive;
+  font: 300 1.2vmax 'Nunito';
   outline: none;
   color: white;
 
@@ -129,7 +129,7 @@
   height: 3vmax;
   border: none;
   margin: 0%;
-  font: 400 1vmax cursive;
+  font: 400 1vmax 'Nunito';
   transition: all 0.5s;
   padding: 0 1vmax;
   color: rgb(0, 255, 191);
