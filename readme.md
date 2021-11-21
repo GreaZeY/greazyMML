@@ -15,6 +15,7 @@ Capital movie a web app where user can browse movies and add them to thier list.
 * NodeJS
 * React.JS
 * ExpressJS
+* MongoDB
 
 ### Installing depencencies and running the app
 * Fork the repository
