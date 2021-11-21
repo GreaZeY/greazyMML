@@ -42,13 +42,6 @@ const userSchema = new mongoose.Schema({
                 default:'https://res.cloudinary.com/greazey/image/upload/v1636649067/UserAvatars/Profile_vbequf.png'
             }    
     },
-    favorites:[{
-        movie:{type: Object},
-        dateAdded:{
-            type: Date,
-            default:Date.now
-        },
-    }],
     createdAt:{
         type:Date,
         default:Date.now
