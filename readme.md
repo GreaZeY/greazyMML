@@ -1,9 +1,9 @@
 
-#                                       [Capital Movie](https://grzycapitalmovieapi.herokuapp.com/)
+#                                       [Capital Movie](https://famous-rose-earthworm.cyclic.app/)
 
 Capital movie a web app where user can browse movies and add them to thier list.
 
-#### [Open site](https://grzycapitalmovieapi.herokuapp.com/) 
+#### [Open site](https://famous-rose-earthworm.cyclic.app/) 
 
 
 - Account Management
